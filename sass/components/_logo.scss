@@ -1,0 +1,43 @@
+.logo {
+   // margin-right: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .page-header { 
+   &__logo-active {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: $active;
+    font-family: "Raleway", sans-serif;
+   @include font(700, 26px, 1.19);
+  }
+  
+  &__logo-black {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: $black;
+    font-family: "Raleway", sans-serif;
+    @include font(700, 26px, 1.19);
+  }
+}
+  .footer { 
+  &__logo {
+    margin-bottom: 20px;
+  }
+  
+ &__logo-activ {
+    color: $active;
+    font-family: "Raleway", sans-serif;
+    @include font(700, 26px, 1.19);
+    
+  }
+  
+   &__logo-white {
+    color: $white;
+    font-family: "Raleway", sans-serif;
+    @include font(700, 26px, 1.19);
+   
+    
+  }
+}

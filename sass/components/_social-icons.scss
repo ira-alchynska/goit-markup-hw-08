@@ -1,0 +1,36 @@
+.social-icons {
+  @include flexbox (center, center);
+    padding-bottom: 24px;
+ 
+  &__icon {
+    width: 20px;
+    height: 20px;
+    }
+  }
+
+  .social-icons__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .social-icons__link {
+    @include flexbox(center, center);
+    width:44px;
+    height:44px;
+    background-color: $white;
+    fill: $social-icon;
+    border-radius: 50%;
+    transition: background-color  $function-animation $timing-function,
+     fill $timing-function $function-animation;
+    
+  &:hover, 
+  &:focus, 
+  &__icon:hover,
+  &__icon:focus {
+    background-color: $active;
+    fill: $white;
+  }
+}
+  
+
+
+    

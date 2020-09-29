@@ -1,0 +1,52 @@
+.contacts__icon{
+    fill: $secondary-text;
+    margin-right: 10px;
+   }
+  
+   
+  .contacts {
+    //display: flex;
+    display: none;
+
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include font(500, 14px, 1.14);
+  letter-spacing: 0.02em;
+  color: $secondary-text;
+  transition: color $timing-function $function-animation;
+}
+  
+  &__link:hover, 
+  &__link:focus {
+    color: $active;
+  }
+  
+  &__link:hover &__icon {
+    fill: $active;
+  }
+}
+  
+   .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+
+  .footer-address {
+    color: $white;
+@include font(400, 14px, 1.71);
+   
+  
+  &__link-mail {
+    display: block;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  &__link-tel {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+  

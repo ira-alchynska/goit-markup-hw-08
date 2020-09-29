@@ -1,0 +1,45 @@
+.follow {
+    display: block;
+    @include font(700, 14px, 1.14);
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+    }
+  
+    .footer-icons {
+      @include flexbox(center, center);
+     
+   
+    
+    &__item {
+      width: calc((100% - 10px * 3) /4);
+    }
+    
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+    .footer-icons__link {
+      @include flexbox(center, center);
+      width:44px;
+      height:44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: background-color $timing-function $function-animation;
+      
+    &:hover,
+    &:focus {
+      background-color: $active;
+    }
+    
+    & .footer__icon:hover,
+    & .footer__icon:focus  {
+    fill: $white;
+    }
+  }
+    .footer__icon {
+      width: 20px;
+      height: 20px;
+      fill: $white; 
+    }
+    

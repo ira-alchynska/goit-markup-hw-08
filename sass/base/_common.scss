@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::befor {
+    box-sizing: inherit;
+  }
+
+  body {
+    color: $primary-text;
+    background-color: $white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+
+  }
+  
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .line {
+  border-bottom: 1px solid #ECECEC;
+  flex-grow: 1;
+}
+  
+  
+  
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .caption {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 0px 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0;
+  }

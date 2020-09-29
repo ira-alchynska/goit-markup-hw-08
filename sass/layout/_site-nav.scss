@@ -1,0 +1,47 @@
+.site-nav .current {
+    color: $active;
+  }
+  
+  .site-nav {
+    //display: flex;
+    display: none;
+  }
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .navigation {
+    @include flexbox (center, center);
+    margin-right: auto;
+  }
+  
+  .site-nav__link { 
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-text;
+    @include font(500, 14px, 1.14);
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $active;
+  }
+  & .current {
+    color: $active;
+  }
+}
+  
+  .site-nav__link{
+    position: relative;
+  }
+  
+  .current:after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: $active;
+    border-radius: 2px;
+  }

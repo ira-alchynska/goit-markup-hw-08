@@ -556,6 +556,25 @@ ul {
   height: 60px;
 }
 
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+
+.menu-button .icon-cross {
+  opacity: 0;
+}
+
 .site-nav .current {
   color: #2196f3;
 }
@@ -663,7 +682,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;

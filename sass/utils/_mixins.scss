@@ -26,7 +26,11 @@
     @media (min-width: $tablet) {
       @content;
     }
-  } @else if $range ==desctop {
+  } @else if $range ==tablet-only {
+    @media (max-width: #{$tablet}) {
+      @content;
+    }
+  } @else if $range ==desktop {
     @media (min-width: $desktop) {
       @content;
     }

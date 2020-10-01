@@ -1,10 +1,16 @@
 
 .gallery-section {
-  display: none;
+ @include for-size(mobile) {
+    display: none;
+ }
+ @include for-size(tablet) {
+   display: none;
+  }
 }
 
 
 .gallery__item {
+  
     width: calc((100% - 30px * 2) / 3);
   }
   

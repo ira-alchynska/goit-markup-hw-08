@@ -55,6 +55,10 @@ html {
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @include for-size(desktop) {
+  font-size: 44px;
+    }
   }
   
   

@@ -24,24 +24,25 @@
 
   }
 }
-//.clients {
-  //margin: -15px;
+.clients {
+  margin: -15px;
 
-//&__item {
- //margin: 15px;
-//}
-//}
+&__item {
+ margin: 15px;
+ width: calc(50% - 30px);
+}
+}
   .clients__icon {
     fill: $social-icon;
     transition: fill $timing-function $function-animation;
   }
   
-  .clients__item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .clients__item {
-    margin-bottom: 30px;
-  }
-  .clients__item:nth-last-child(-n +2) {
-    margin-bottom: 0;
-  }
+  //.clients__item:not(:nth-child(2n)) {
+  //  margin-right: 30px;
+  //}
+  //.clients__item {
+  //  margin-bottom: 30px;
+ // }
+  //.clients__item:nth-last-child(-n +2) {
+  //  margin-bottom: 0;
+ // }

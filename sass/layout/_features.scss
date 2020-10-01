@@ -1,15 +1,11 @@
-//.features .section {
-  //  padding-bottom: 0;
-  //}
-  
-  .features__item:not(:last-child) {
-   margin-bottom: 30px;
+
+  .features__list {
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
- // .features__item {
-   // width: calc((100% - 30px * 3) / 4);
-  //}
-  
   .features { 
     
   &__thumb  {
@@ -36,3 +32,28 @@
     @include font(400, 14px, 1.71);
   }
 }
+
+.features__item {
+  &:not(:last-child) {
+  margin-bottom: 30px;
+}
+@include for-size(tablet) { 
+  flex-basis: calc((100% - 30px)/2);
+  margin-right: 30px;
+  }
+  
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 30px * 3)/4);
+    &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
+}
+

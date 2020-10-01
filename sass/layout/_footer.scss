@@ -2,8 +2,15 @@
     padding: 60px 15px;
     //align-items: baseline;
     text-align: center;
+    @include for-size (desktop) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+
+    @include for-size (desktop) {
+     align-items: baseline;
   }
-  
+}
   .footer  {
     background-color: $ftr-bcg;
    }
@@ -16,7 +23,7 @@
     padding-bottom: 0px;
     text-align: center;
   }
- 
+  
   
   
   

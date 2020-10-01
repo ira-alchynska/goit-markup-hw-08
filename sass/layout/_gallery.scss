@@ -1,13 +1,13 @@
 
 .gallery-section {
- @include for-size(mobile) {
-    display: none;
+  display: none;
  }
- @include for-size(tablet) {
-   display: none;
+
+.gallery-section {
+  @include for-size(desktop) {
+display: block;
   }
 }
-
 
 .gallery__item {
   

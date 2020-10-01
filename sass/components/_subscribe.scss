@@ -30,6 +30,10 @@
 }
   .subscribe__button { 
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     width: 200px;
     height: 50px;
    text-align: center;

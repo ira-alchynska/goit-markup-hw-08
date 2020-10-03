@@ -19,7 +19,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     text-align: center;
-    @include for-size(mobile) {
+    @include for-size(tablet-only) {
       margin-bottom: 60px;
     }
   }

@@ -1173,7 +1173,7 @@ ul {
   text-align: center;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 768px) {
   .footer__thumb {
     margin-bottom: 60px;
   }
@@ -1412,6 +1412,19 @@ ul {
 
 .filter {
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {

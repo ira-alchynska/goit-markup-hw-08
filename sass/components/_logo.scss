@@ -1,29 +1,48 @@
 .logo {
-   // margin-right: 93px;
+  @include for-size(mobile) { 
+  display: inline-block;
+  margin-bottom: 16px;
     padding-top: 16px;
-    padding-bottom: 16px;
   }
+    @include for-size(desktop) {
+      margin-right: 93px;
+    }
+   // padding-bottom: 16px;
   
+}
   .page-header { 
    &__logo-active {
-    padding-top: 25px;
-    padding-bottom: 25px;
+   // padding-top: 25px;
+   // padding-bottom: 25px;
     color: $active;
     font-family: "Raleway", sans-serif;
-   @include font(700, 26px, 1.19);
+   @include font(700, 24px, 1.19);
+   @include for-size(desktop) {
+     font-size: 26px;
+     padding-top: 25px;
+   padding-bottom: 25px;
+   }
   }
   
   &__logo-black {
-    padding-top: 25px;
-    padding-bottom: 25px;
+   // padding-top: 25px;
+   // padding-bottom: 25px;
     color: $black;
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19);
+    @include font(700, 24px, 1.19);
+    @include for-size(desktop) {
+      font-size: 26px;
+      padding-top: 25px;
+    padding-bottom: 25px;
+    }
   }
 }
   .footer { 
   &__logo {
     margin-bottom: 20px;
+    @include for-size(desktop) {
+      text-align: start;
+    }
   }
   
  &__logo-activ {

@@ -8,6 +8,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include for-size(desktop) {
+    height: 600px;
+  }
  
   
   &__box {
@@ -21,8 +24,10 @@
     @include font(900, 26px, 1.61);
     text-transform: uppercase;
    letter-spacing: 0.06em;
+   
 
    @include for-size(desktop) {
+  
     @include font(900, 44px, 1.36);
    }
   }

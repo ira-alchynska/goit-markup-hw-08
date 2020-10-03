@@ -24,6 +24,12 @@
     @include font(700, 14px, 1.14);
     text-transform: uppercase;
     text-align: center;
+    @include for-size(tablet) {
+      text-align: start;
+    }
+    @include for-size(desktop) {
+      text-align: start;
+    }
   }
   
   &__text {
@@ -54,6 +60,11 @@
     &:not(:last-child) {
     margin-right: 30px;
   }
+  }
+}
+.features .section {
+  @include for-size(desktop) {
+    padding-bottom: 0;
   }
 }
 

@@ -5,9 +5,10 @@
   
    
   .contacts {
-    //display: flex;
-   // display: none;
-
+    display: flex;
+      justify-content: center;
+      align-items: center;
+   
 
   &__link {
     display: flex;
@@ -28,10 +29,14 @@
   }
 }
   
-   .contacts__item:not(:last-child) {
-    margin-right: 50px;
-  }
 
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+  @include for-size(desktop) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
 
   .footer-address {
     color: $white;
@@ -49,4 +54,9 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-  
+  .contacts-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

@@ -5,12 +5,10 @@
     @include for-size (desktop) {
       display: flex;
       align-items: baseline;
-      justify-content: space-around;
 
-    @include for-size (desktop) {
-     align-items: baseline;
-  }
 }
+}
+
   .footer  {
     background-color: $ftr-bcg;
    }
@@ -18,10 +16,32 @@
   .footer__thumb {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
     padding-top: 0px;
     padding-bottom: 0px;
     text-align: center;
+    @include for-size(mobile) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      margin-bottom: 60px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-box {
+    @include for-size(desktop) {  
+    display: inline-block;
+     margin-left: 70px;
+    }  
   }
   
   

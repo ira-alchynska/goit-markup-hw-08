@@ -13,16 +13,28 @@
      <!--Шапка страницы-->
      <header class="page-header">
       <div class="container flexbox">
-      <nav class="navigation">
-        <a href="./index.html" class="logo">
-          <span class="page-header__logo-active">Web</span><span class="page-header__logo-black">Studio</span></a>
+       <nav class="navigation">
+       
+            <a href="./index.html" class="logo">
+              <span class="page-header__logo-active">Web</span><span class="page-header__logo-black">Studio</span></a>
+      <button type="button" class="menu-button"
+      aria-expanded="false" data-menu-button>
+          <svg width="25" height="25" aria-label="Переключатель мобильного меню"
+          aria-controls="menu-container">
+          <use class="icon-cross" href="./img/icons/symbol-defs-menu.svg#closemenu"></use>
+          <use class="icon-menu" href="./img/icons/symbol-defs-menu.svg#menu"></use>
+          </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
         <!--Навигация на другие страницы-->
+        <div class="nav-box">
         <ul class="site-nav list">
-          <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+          <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студия</a></li>
           <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current" >Портфолио</a></li>
           <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
+    <div class="contacts-box" >
       <ul class="contacts list flexbox">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@example.com" >
@@ -39,6 +51,9 @@
           +38 099 111 11 11</a></li>
       </ul>
     </div>
+    </div>
+  </nav>
+      </div>
     <span class="line flexbox"></span>
     </header>
     <main>
@@ -201,6 +216,7 @@
     <!--футер -->
     <footer class="footer">
       <div class="container">
+      <div class="wrapper">
         <div class="footer__thumb">
         <a href="./index.html" class="footer__logo">
           <span class="footer__logo-activ">Web</span><span class="footer__logo-white">Studio</span></a>
@@ -243,13 +259,14 @@
 </svg>
 </a>
 </li>
-        </ul>
+  </ul>
+</div>
 </div>
 <div class="subscribe">
   <b class="subscribe__title">Подпишитесь на рассылку</b>
   <form class="subscribe__form"> 
 <input class="subscribe__field" type="email" name="subscribe"  placeholder="E-mail">
-<button class="subscribe__button" type="submit"><span>Подписаться</span>
+<button class="subscribe__button" type="submit"><span class="subscribe__inscription">Подписаться</span>
   <svg class="subscribe__button-icon" width="24px" height="24px">
     <use href="img/icons/symbol-defs3.svg#send"></use>
   </svg>

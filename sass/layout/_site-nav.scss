@@ -4,15 +4,30 @@
   
   .site-nav {
     display: flex;
-    //display: none;
+    justify-content: center;
+    @include for-size(tablet) {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+      @include for-size(desktop) {
+        margin-right: auto;
+
+      }
+    
   }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
+   
   }
   
   .navigation {
     @include flexbox (center, center);
-    margin-right: auto;
+
+    @include for-size(desktop) {
+      margin-right: 0;
+    }
+   
+    
   }
   
   .site-nav__link { 
@@ -44,4 +59,12 @@
     height: 4px;
     background-color: $active;
     border-radius: 2px;
+  }
+
+  .nav-box {
+   @include for-size(desktop) {
+     justify-content: center;
+     align-items: baseline;
+     margin-right: 230px;
+    }
   }

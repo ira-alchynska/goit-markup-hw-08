@@ -4,7 +4,11 @@
     text-transform: uppercase;
     color: $white;
     margin-bottom: 20px;
+    @include for-size(desktop) {
+      text-align: start;
     }
+    }
+
   
     .footer-icons {
       @include flexbox(center, center);
@@ -31,15 +35,21 @@
     &:focus {
       background-color: $active;
     }
-    
-    & .footer__icon:hover,
-    & .footer__icon:focus  {
-    fill: $white;
-    }
   }
+
     .footer__icon {
       width: 20px;
       height: 20px;
       fill: $white; 
+      & :hover,
+    & :focus  {
+    fill: $white;
     }
+    }
+    .footer-box {
+      display: inline-block;
+     @include for-size(mobile) {
+       margin-bottom: 60px;
+     }
     
+    }

@@ -1,17 +1,24 @@
 .subscribe {
- // margin-left: 93px;
-
+  @include for-size(desktop) { 
+  margin-left: 93px;
+  }
  
  &__title {
    display: block;
+  
    margin-bottom: 20px;
    color: $white;
    @include font(700, 14px, 1.14);
    text-transform: uppercase;
+   @include for-size(desktop) {
+     margin-bottom: 0;
+     @include for-size(tablet) { 
+     text-align: start;
+   }
   } 
- 
+}
  &__field {
-     width: 358px;
+     width: 100%;
      margin-right: 12px;
      padding-left: 16px;
      padding-top: 15px;
@@ -22,6 +29,20 @@
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
      border-radius: 4px;
      transition: border $timing-function $function-animation;
+     @include for-size(tablet) {
+       width: 450px;
+     }
+     @include for-size(desktop) {
+       width: 358px;
+     
+     &:hover,
+     &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      outline-color: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+     }
+    }
  }
  &__form input::placeholder {
    color: rgba(255, 255, 255, 0.6);
@@ -30,10 +51,7 @@
 }
   .subscribe__button { 
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+   
     width: 200px;
     height: 50px;
    text-align: center;
@@ -54,9 +72,21 @@
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    background-color: #188ce8;
    fill: $white;
+  
   }
-  }
-
+}
+.subscribe__button { 
+@include for-size(tablet) { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+ }
+ @include for-size(desktop) {
+   display: inline-block;
+ }
+}
   .subscribe{ 
   &__button-icon {
   position: absolute;

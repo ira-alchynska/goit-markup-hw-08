@@ -1,9 +1,25 @@
 .page-header .flexbox {
+ @include for-size(tablet) { 
     align-items: center;
+    justify-content: flex-start;
+  }
+    @include for-size(desktop) {
+      align-items: center;
     justify-content: flex-end;
     }
-    
+ 
+}  
     .page-header {
       height: 60px;
+      position: relative;
+      @include for-size(tablet) {
+        height: 80px;
+      }
+
     }
-     
+
+    .line {
+      border-bottom: 1px solid #ECECEC;
+      flex-grow: 1;
+      display: flex;
+    }

@@ -1,9 +1,38 @@
 
-  
+  .portfolio-box {
+    @include for-size(tablet) {
+      display: flex;
+    }
+  }
   .portfolio {
    // width: calc((100% - 30px * 2) / 3);
     background: $white;
     border: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 30px)/2);
+      margin-right: 30px;
+      &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+      }
+      
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+      
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      }
+      @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 30px * 2) / 3);
+        &:nth-child(-n + 2) {
+      margin-bottom: 0;
+      }
+        &:not(:last-child) {
+        margin-right: 30px;
+      }
+      }
    
   }
   
@@ -30,6 +59,11 @@
   
   .portfolio:not(:last-child) {
     margin-bottom: 30px;
+    @include for-size(desktop) {
+      margin-bottom: 20px;
+     
+       
+    }
   }
 
   .overlay {
@@ -69,12 +103,14 @@
      }
   
      .portfolio .team-card__pecture {
-       //width: 370px;
+       @include for-size(desktop) { 
+       width: 370px;
      }
+    }
   
-    
-  
-  
-  
+ 
+ 
+
+
   
   

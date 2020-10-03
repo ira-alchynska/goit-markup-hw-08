@@ -13,22 +13,28 @@
     <!--Шапка страницы-->
     <header class="page-header">
       <div class="container flexbox">
-      <nav class="navigation">
-        <a href="./index.html" class="logo">
-          <span class="page-header__logo-active">Web</span><span class="page-header__logo-black">Studio</span></a>
-          <button type="button" class="menu-button">
-          <svg width="25" height="25" aria-label="Переключатель мобильного меню">
+       <nav class="navigation">
+       
+            <a href="./index.html" class="logo">
+              <span class="page-header__logo-active">Web</span><span class="page-header__logo-black">Studio</span></a>
+      <button type="button" class="menu-button"
+      aria-expanded="false" data-menu-button>
+          <svg width="25" height="25" aria-label="Переключатель мобильного меню"
+          aria-controls="menu-container">
           <use class="icon-cross" href="./img/icons/symbol-defs-menu.svg#closemenu"></use>
           <use class="icon-menu" href="./img/icons/symbol-defs-menu.svg#menu"></use>
           </svg>
           </button>
+          <div class="menu-container" id="menu-container" data-menu>
         <!--Навигация на другие страницы-->
+        <div class="nav-box">
         <ul class="site-nav list">
           <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
           <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link" >Портфолио</a></li>
           <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
+    <div class="contacts-box" >
       <ul class="contacts list flexbox">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@example.com" >
@@ -45,6 +51,9 @@
           +38 099 111 11 11</a></li>
       </ul>
     </div>
+    </div>
+  </nav>
+      </div>
     <span class="line flexbox"></span>
     </header>
     <main>
@@ -361,6 +370,7 @@
     
     <footer class="footer">
       <div class="container">
+      <div class="wrapper">
         <div class="footer__thumb">
         <a href="./index.html" class="footer__logo">
           <span class="footer__logo-activ">Web</span><span class="footer__logo-white">Studio</span></a>
@@ -404,6 +414,7 @@
 </a>
 </li>
   </ul>
+</div>
 </div>
 <div class="subscribe">
   <b class="subscribe__title">Подпишитесь на рассылку</b>
@@ -472,5 +483,6 @@
    </div>
  </div>
  <script src="./js/modal.js"></script>
+ <script src="js/menu.js"></script>
   </body>
 </html>

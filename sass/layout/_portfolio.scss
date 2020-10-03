@@ -9,7 +9,7 @@
   .portfolio {
     background: $white;
     border: 1px solid #EEEEEE;
-    @include for-size(tablet-only) {
+    @media screen and(max-width: 767px) {
       &:not(:last-child) { 
       margin-bottom: 30px;
     }
@@ -18,11 +18,9 @@
     @include for-size(tablet) {
        width: calc((100% - 30px) / 2);
         margin-right: 30px; 
-        &:nth-child(-n + 2) {
-        margin-bottom: 30px;
-        }
-        
-        &:nth-last-child(-n + 2) {
+       margin-bottom: 30px;
+      
+        &:nth-last-child(-n + 1) {
           margin-bottom: 0;
         }
         

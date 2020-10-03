@@ -1471,7 +1471,7 @@ ul {
   border: 1px solid #EEEEEE;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1481,11 +1481,9 @@ ul {
   .portfolio {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
-  }
-  .portfolio:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
-  .portfolio:nth-last-child(-n + 2) {
+  .portfolio:nth-last-child(-n + 1) {
     margin-bottom: 0;
   }
   .portfolio:nth-child(2n) {

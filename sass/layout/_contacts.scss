@@ -5,6 +5,10 @@
   
    
   .contacts {
+    @media screen and(max-width: 767px) {
+      display: inline-block;
+      
+    }
     display: flex;
       justify-content: center;
       align-items: center;
@@ -17,6 +21,9 @@
   letter-spacing: 0.02em;
   color: $secondary-text;
   transition: color $timing-function $function-animation;
+  @media screen and(max-width: 767px) {
+    font-size: 18px;
+  }
 }
   
   &__link:hover, 
@@ -27,6 +34,7 @@
   &__link:hover &__icon {
     fill: $active;
   }
+ 
 }
   
 
@@ -35,6 +43,9 @@
   @include for-size(desktop) {
     margin-bottom: 0;
     margin-right: 30px;
+  }
+  @media screen and(max-width: 767px) {
+    margin-bottom: 16px;
   }
 }
 

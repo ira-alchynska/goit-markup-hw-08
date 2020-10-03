@@ -3,9 +3,10 @@
   }
   
   .site-nav {
-    display: flex;
-    justify-content: center;
+   
     @include for-size(tablet) {
+      display: flex;
+    justify-content: center;
       margin-left: 80px;
       margin-right: 80px;
     }
@@ -15,10 +16,13 @@
       }
     
   }
-  .site-nav__item:not(:last-child) {
+  .site-nav__item {
+  @include for-size(tablet) { 
+  &:not(:last-child) {
     margin-right: 50px;
-   
   }
+}
+}
   
   .navigation {
     @include flexbox (center, center);
@@ -43,6 +47,10 @@
   }
   & .current {
     color: $active;
+  }
+  @media screen and(max-width: 767px) {
+    display: inline-block;
+    font-size: 18px;
   }
 }
   

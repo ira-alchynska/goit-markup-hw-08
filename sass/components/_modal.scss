@@ -6,7 +6,9 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       opacity: 1;
-     visibility: visible}
+     visibility: visible;
+     z-index: 2;
+    }
   
   
   .backdrop.is-hidden {
@@ -25,11 +27,16 @@
     transform: translate(-50%, -50%) scale(1) rotateY(0deg);
     width: 450px;
     height: 609px;
+    
     overflow: hidden;
     background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: $timing-function $function-animation;
+    @include for-size(desktop) {
+      width: 528px;
+      height: 581px;
+    }
   }
   
   .is-hidden .modal {

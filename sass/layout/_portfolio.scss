@@ -20,7 +20,7 @@
         margin-right: 30px; 
        margin-bottom: 30px;
       
-        &:nth-last-child(-n + 1) {
+        &:last-of-type {
           margin-bottom: 0;
         }
        @media screen and(max-width: 1199px) {

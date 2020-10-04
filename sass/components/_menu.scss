@@ -16,6 +16,8 @@
             left: 0;
             width: 100%;
             height: 453px;
+            
+            transition: all $timing-function $function-animation;
             &.is-open {
 
                 display: block;

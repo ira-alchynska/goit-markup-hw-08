@@ -1239,10 +1239,10 @@ ul {
 @media (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 30px * 5) / 6);
+    margin-bottom: 0;
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 0;
   }
 }
 

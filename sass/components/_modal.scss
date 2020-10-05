@@ -6,8 +6,10 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       opacity: 1;
-     visibility: visible;
+     //visibility: visible;
      z-index: 2;
+     padding: 50px 20px;
+     overflow-y: scroll;
     }
   
   
@@ -21,17 +23,28 @@
   
   
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
-    height: 609px;
+    position: relative;
+    
+    @include for-size(mobile){
+     
+  
+      width: 450px;
+     height: 609px;
+    }
+    
     overflow: hidden;
     background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: translate(-50%, -50%) scale(1) rotateY(0deg);
     transition: $timing-function $function-animation;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
     @include for-size(desktop) {
       width: 528px;
       height: 581px;
@@ -39,7 +52,7 @@
   }
   
   .is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5) rotateY(45deg);
+    transform: translate(-50%, -50%) scale(0.5);
     transition: $timing-function $function-animation;
   }
   

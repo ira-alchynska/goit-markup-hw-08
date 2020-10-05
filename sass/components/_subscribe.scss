@@ -1,6 +1,6 @@
 .subscribe {
   @include for-size(desktop) { 
-  margin-left: 93px;
+  margin-left: 83px;
   }
  
  &__title {
@@ -10,13 +10,12 @@
    color: $white;
    @include font(700, 14px, 1.14);
    text-transform: uppercase;
-   @include for-size(desktop) {
-     margin-bottom: 0;
-     @include for-size(tablet) { 
+  
+     @include for-size(desktop) { 
      text-align: start;
    }
   } 
-}
+
  &__field {
      width: 100%;
      margin-right: 12px;
@@ -49,6 +48,7 @@
  }
  
 }
+
   .subscribe__button { 
     position: relative;
    
@@ -85,6 +85,7 @@
  }
  @include for-size(desktop) {
    display: inline-block;
+   margin-top: 0;
  }
 }
   .subscribe{ 

@@ -30,12 +30,13 @@
       align-items: baseline;
       justify-content: space-around;
       margin-bottom: 60px;
-    }
+    
   
     @include for-size(desktop) {
       margin-bottom: 0;
     }
   }
+}
 
   .footer-box {
     @media screen and(max-width: 1199px) {

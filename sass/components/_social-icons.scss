@@ -16,7 +16,6 @@
     @include flexbox(center, center);
     width:44px;
     height:44px;
-    background-color: $white;
     fill: $social-icon;
     border-radius: 50%;
     transition: background-color  $function-animation $timing-function,

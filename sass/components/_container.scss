@@ -6,7 +6,7 @@
     width: 100%;
 
     @include for-size(mobile) {
-      width: calc(480px);
+      width: (480px);
     }
    
     @include for-size(tablet) {
@@ -14,7 +14,7 @@
     }
 
     @include for-size(desktop) {
-      width: (1200px);
+      width: calc(1200px - 18px);
 
     }
   }

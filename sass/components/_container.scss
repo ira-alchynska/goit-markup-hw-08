@@ -6,15 +6,15 @@
     width: 100%;
 
     @include for-size(mobile) {
-      width: calc(480px - 18px);
+      width: calc(480px);
     }
    
     @include for-size(tablet) {
-      width: (768px - 18px);
+      width: (768px);
     }
 
     @include for-size(desktop) {
-      width: (1200px - 18px);
+      width: (1200px);
 
     }
   }

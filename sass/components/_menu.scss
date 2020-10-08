@@ -44,6 +44,10 @@
     align-items: center;
     background: transparent;
     border: none;
+    &:hover,
+    &:focus {
+        fill: $active;
+    }
     & .icon-cross {
         opacity: 0;
         }

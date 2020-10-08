@@ -712,6 +712,10 @@ ul {
   border: none;
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
+
 .menu-button .icon-cross {
   opacity: 0;
 }

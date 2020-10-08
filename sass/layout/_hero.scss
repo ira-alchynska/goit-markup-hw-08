@@ -15,6 +15,7 @@
     }
   
     @include for-size(tablet) {
+      
       background-image: url(../img/tablet/bgi.jpg);
   
       @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -34,6 +35,9 @@
   
   &__box {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
   }
   
   &__title {

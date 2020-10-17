@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @include for-size(desktop) {
+  @include for-size(mobile) {
     height: 600px;
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       background-image: url(../img/mobile/bgi@2x.jpg);
